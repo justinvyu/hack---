@@ -1,0 +1,24 @@
+<template name="dashboard">
+	<div id="template-dashboard">
+		
+		<div id="sidebar">
+			<div class="logo">
+				<h1>hackdash</h1>
+			</div>
+			<ul>
+				{{#each workshops}}
+					{{> workshopItem}}
+				{{/each}}
+			</ul>
+		</div>
+
+	</div>
+	
+</template>
+
+<template name="workshopItem">
+	<li>
+		<a href="#">{{name}}</a>
+		<div class="difficulty easy"></div>
+	</li>
+</template>

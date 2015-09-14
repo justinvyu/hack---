@@ -1,11 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,300);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
 /* Global Stuff */
-
-* {
-    font-family: 'Raleway', sans-serif;
-}
 
 html, body {
   width: 100%;
@@ -13,6 +11,8 @@ html, body {
 }
 
 .template-home {
+  font-family: 'Raleway', sans-serif;
+
   background: url(img/bg2.jpg) center no-repeat;
   background-color: #2c3e50;
   height: 100%;
@@ -20,12 +20,16 @@ html, body {
   margin: 0;
   padding: 0;
   text-align: center;
-  
+
+  a {
+    text-decoration: none;
+  }
+
   .intro-div {
     margin-left: auto;
     margin-right: auto; 
     position: relative;
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
   }
   #title {

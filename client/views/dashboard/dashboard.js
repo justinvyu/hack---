@@ -4,7 +4,7 @@ Controller('dashboard', {
 
     	workshops: [
     		{
-    			name: 'Portfolio Website',
+    			name: 'Portfolio: Show Off Your Accomplishments',
     			difficulty: 'beginnner'
     		},
     		{

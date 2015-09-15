@@ -1,0 +1,41 @@
+<template name="new">
+
+	<div class="container">
+		<h3>Submit A Workshop</h3>
+
+		<div class="editorwrap row" style="overflow: hidden;">
+
+		    <!-- Markdown Editor -->
+		    <section class="entry-markdown col-md-6 col-xs-1">
+		        <header class="floatingheader" style="">
+		            <small>Markdown</small>
+		            <a class="markdown-help" href="#"><span class="hidden">What is Markdown?</span></a>
+		        </header>
+		        <section class="entry-markdown-content">
+					<textarea id="entry-markdown" style="display: none;" autofocus>Start typing away!</textarea>
+		        </section>
+		    </section>
+		    <!-- Markdown Editor END-->
+
+		    
+		    <!-- Markdown Preview -->
+		    <section class="entry-preview active col-md-6 col-xs-1">
+		        <header class="floatingheader" style="">
+		            <small class="pull-left" >Preview</small>
+		            <small class="pull-right"> <span class="entry-word-count js-entry-word-count">3 words</span></small>
+		        </header>
+		        <section class="entry-preview-content">
+		            <div class="rendered-markdown">Start typing away!</div>
+		        </section>
+		    </section>
+		    <!-- Markdown Preview END-->
+
+		</div>
+
+		<button id="submit" class="btn btn-info btn-lg">Submit</button>
+		<a id="cancel" class="btn btn-default btn-lg" href="{{pathFor route='dashboard'}}">Cancel</a>
+
+	</div>
+
+</template>
+

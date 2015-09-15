@@ -6,6 +6,8 @@ Controller('home', {
     },
 
     rendered: function() {
+
+
     }
 
 });

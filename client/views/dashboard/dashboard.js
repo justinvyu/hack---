@@ -20,7 +20,11 @@ Controller('dashboard', {
     },
 
     rendered: function() {
-    	console.log("hello")
+    	$('.ui.sticky')
+          .sticky({
+            context: '#context'
+          })
+        ;
     }
 
 });

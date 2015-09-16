@@ -8,12 +8,13 @@ meteor-platform
 iron:router
 fortawesome:fontawesome
 themeteorchef:controller
-less
 natestrauser:jquery-scrollto
-twbs:bootstrap
 timmyg:wow
 mrt:jquery-color-animation
 meteorhacks:fast-render
 noorderstorm:stellar
 jeremy:ghostdown
 fourseven:scss
+semantic:ui
+semantic:ui-data
+flemay:less-autoprefixer

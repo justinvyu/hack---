@@ -1,24 +1,58 @@
 <template name="dashboard">
 	<div id="template-dashboard">
-		
-		<div id="sidebar">
-			<div class="logo">
-				<h1>hackdash</h1>
-			</div>
-			<ul>
-				{{#each workshops}}
-					{{> workshopItem}}
-				{{/each}}
-			</ul>
+
+		<div class="ui visible very thin left vertical pushable inverted sidebar icon labeled menu">
+		  <a class="item">
+		    <i class="dashboard icon"></i>
+		    Dashboard
+		  </a>
+		  <a class="item">
+		    <i class="block upload icon"></i>
+		    Upload
+		  </a>
+		  <a class="item">
+		    <i class="user icon"></i>
+		    Account
+		  </a>
 		</div>
+
+		<div class="pusher"> <!-- This is where the markdown is -->
+			
+			<div id="context" class="container content">
+
+				<h2 class="section-title">1. Setting up the Project</h2>
+
+				<div class="difficulty-wrapper">
+					<p class="beginner">Beginner</p>
+					<div class="difficulty beginner"></div>
+
+				</div>
+				
+ 
+				<h3 class="workshop-title">Portfolio Website</h3>
+				<p>Street art aesthetic cornhole fap meditation, whatever umami kitsch Schlitz cold-pressed trust fund listicle. Crucifix gentrify artisan semiotics locavore Banksy mlkshk, street art migas heirloom keytar blog post-ironic leggings. Cardigan Echo Park flannel, ethical tousled Intelligentsia synth dreamcatcher forage authentic 90's ennui lo-fi XOXO cred. Pinterest brunch ugh church-key yr. Normcore Williamsburg Portland, drinking vinegar VHS cred forage mumblecore chillwave four dollar toast. Sustainable drinking vinegar direct trade, dreamcatcher VHS cliche tousled try-hard swag vinyl Shoreditch shabby chic. Ennui 90's farm-to-table Godard drinking vinegar Vice.</p>
+
+				<p>Tilde ethical PBR, +1 Blue Bottle leggings cronut semiotics Pinterest butcher pug mlkshk meh XOXO Austin. Leggings Thundercats chambray, church-key swag locavore pug Brooklyn crucifix Banksy messenger bag gluten-free PBR mlkshk tousled. Freegan four dollar toast tousled, narwhal tote bag try-hard selfies bespoke iPhone cred gentrify fixie tilde Thundercats Godard. Austin squid crucifix roof party, ugh gentrify gastropub trust fund mlkshk stumptown lomo mustache keffiyeh. Organic ennui Thundercats cliche letterpress pop-up, Pinterest Bushwick sriracha McSweeney's Williamsburg chillwave Etsy tote bag. Brunch Williamsburg farm-to-table, Godard Portland retro readymade cray gluten-free twee aesthetic. Fap Neutra Carles bespoke, Truffaut DIY dreamcatcher banjo jean shorts gentrify keffiyeh.</p>
+				
+				<p>Jean shorts Blue Bottle cred listicle, butcher bitters tofu Echo Park small batch pop-up Neutra gastropub normcore distillery retro. Artisan asymmetrical +1 disrupt, beard iPhone irony post-ironic art party mlkshk Banksy flexitarian tilde. Farm-to-table Echo Park cred cornhole 8-bit +1 Etsy. Small batch wayfarers banh mi, PBR direct trade tofu iPhone yr. Single-origin coffee twee banjo stumptown mlkshk, distillery Echo Park cardigan hoodie gastropub kitsch street art. DIY vinyl selfies salvia listicle normcore +1. Art party organic asymmetrical, Pitchfork ethical pug cronut next level master cleanse seitan VHS hella hoodie.</p>
+			</div>
+
+			<div id="right-bar" class="ui segment">
+			
+				<div class="ui right dividing rail">
+				   <div class="ui segment">
+				   	Right Rail Content
+				   </div>
+				</div>
+			</div>
+
+			</div>
 
 	</div>
 	
 </template>
 
 <template name="workshopItem">
-	<li>
-		<a href="#">{{name}}</a>
-		<div class="difficulty easy"></div>
-	</li>
-</template>
+		<a class="item" href="#">{{name}}</a>
+<!-- 		<div class="difficulty easy"></div>
+ --></template>

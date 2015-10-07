@@ -1,0 +1,67 @@
+#template-dashboard {
+  font-family: 'Lato', sans-serif;
+  word-wrap: break-word;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  font-size: 18px;
+  //margin-left: -120px;
+  margin-right: 150px;
+  max-width: 60%;
+  margin-left: 10px;
+  padding: 20px;
+
+  color: #777;
+
+  .section-title {
+    color: #444;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 30px;
+  }
+  .workshop-title {
+    color: #2980b9;
+    margin-top: 5px;
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#right-bar {
+  word-wrap: break-word;
+  position: absolute;
+  right: 100px;
+  padding-top: 80px;
+}
+
+.difficulty-wrapper {
+
+  float: right;
+  padding-right: 10px;
+  p {
+    float: right;
+    margin-left: 10px;
+    display: inline;
+
+    &.beginner {
+      color: #2ecc71;
+    }
+  }
+  .difficulty {
+    display: inline;
+    float: left;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+
+    &.beginner {
+      background-color: #2ecc71;
+    }
+  }
+}

@@ -4,13 +4,16 @@
 
 	{{> searchPanel}}
 
-	<button id="add-button" class="ui button">Add a thing</button>
-
 	<h5 id="separator-title" class="uppercase">Community Workshops</h5>
 
-	{{#each workshops}}
+	<!-- {{#each workshops}} -->
 		{{> workshopCard}}
-	{{/each}}
+		{{> workshopCard}}
+	<!-- {{/each}} -->
+
+	<a id="add-button" class="large circular ui icon button" href="/add">
+		<i class="icon plus"></i>
+	</a>
 
 </div>
 

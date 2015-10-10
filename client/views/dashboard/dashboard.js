@@ -1,9 +1,21 @@
+
 Workshops = new Mongo.Collection('workshops');
+
+if (Meteor.isServer) {
+
+}
+
+if (Meteor.isClient) {
+
+}
 
 Controller('dashboard', {
 
     helpers: {
-    	workshops: Workshops.find().fetch()
+    	workshops: function() {
+            // console.log(Workshops.find({}));
+            return Workshops.find({});
+        }
     },
 
     events: {
@@ -12,13 +24,12 @@ Controller('dashboard', {
                 title: 'Test Title',
                 author: 'Justin Yu',
                 language: 'Ruby'
-            })
+            });
+            // console.log(Workshops.find({}).fetch());
         }
     },
 
     rendered: function() {
-    	$('.ui.sticky').sticky({
-            context: '#context'
-        });
+        
     }
 });

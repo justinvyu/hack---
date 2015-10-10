@@ -1,0 +1,35 @@
+<template name="add">
+
+<div id="add-wrapper">
+
+    <a href="/dashboard">Dashboard</a>
+
+    <form method="POST" role="form">
+        <h1>Add a Workshop!</h1>
+
+        <div class="ui labeled input">
+            <div class="ui label">
+                Title
+            </div>
+            <input id="title-input" />
+        </div>
+
+        <div class="ui labeled input">
+            <div class="ui label">
+                Author
+            </div>
+            <input id="author-input" />
+        </div>
+
+        <div class="ui labeled input">
+            <div class="ui label">
+                Language
+            </div>
+            <input id="language-input" />
+        </div>
+
+        <button class="ui button" id="submit" type="submit" name="button">Submit</button>
+    </form>
+</div>
+
+</template>

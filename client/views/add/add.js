@@ -1,0 +1,6 @@
+Controller('add', {
+
+    rendered: function() {
+        
+    }
+});

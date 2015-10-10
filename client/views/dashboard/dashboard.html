@@ -4,9 +4,13 @@
 
 	{{> searchPanel}}
 
+	<button id="add-button" class="ui button">Add a thing</button>
+
 	<h5 id="separator-title" class="uppercase">Community Workshops</h5>
 
-	{{> workshopCard}}
+	{{#each workshops}}
+		{{> workshopCard}}
+	{{/each}}
 
 </div>
 
@@ -15,28 +19,30 @@
 <template name="searchPanel">
 
 <div id="search-wrapper">
-	<h1 id="search-text">Find something to learn...</h1>
+	<input id="search-text" placeholder="Find something to learn..." />
 </div>
 
 </template>
 
 <template name="workshopCard">
 
-<div class="ui card">
-	<div class="image">
-		<img src="/img/code.gif" />
-	</div>
-	<div class="content">
-		<a class="header">Header</a>
-		<div class="meta">
-			<span class="date">by Justin Yu</span>
+<div class="card-wrapper">
+	<div class="ui card">
+		<div class="image">
+			<img src="/img/code.gif" />
 		</div>
-	</div>
-	<div class="extra content">
-		<a href="#">
-			<i class="user icon"></i>
-			Node.js
-		</a>
+		<div class="content">
+			<a class="header">Header</a>
+			<div class="meta">
+				<span class="date">by Justin Yu</span>
+			</div>
+		</div>
+		<div class="extra content">
+			<a href="#">
+				<i class="user icon"></i>
+				Node.js
+			</a>
+		</div>
 	</div>
 </div>
 

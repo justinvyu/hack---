@@ -1,30 +1,24 @@
+Workshops = new Mongo.Collection('workshops');
+
 Controller('dashboard', {
 
     helpers: {
+    	workshops: Workshops.find().fetch()
+    },
 
-    	workshops: [
-    		{
-    			name: 'Portfolio',
-    			difficulty: 'beginnner'
-    		},
-    		{
-    			name: 'Todo App: Meteor',
-    			difficulty: 'expert'
-    		},
-    		{
-    			name: 'Instagram Clone',
-    			difficulty: 'intermediate'
-    		}
-    	]
-
+    events: {
+        'click #add-button': function() {
+            Workshops.insert({
+                title: 'Test Title',
+                author: 'Justin Yu',
+                language: 'Ruby'
+            })
+        }
     },
 
     rendered: function() {
-    	$('.ui.sticky')
-          .sticky({
+    	$('.ui.sticky').sticky({
             context: '#context'
-          })
-        ;
+        });
     }
-
 });

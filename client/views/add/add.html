@@ -1,35 +1,56 @@
 <template name="add">
 
+<a id="back-button" href="/dashboard" class="ui large button icon" style="background-color: transparent;">
+    <i class="icon reply"></i>
+</a>
+
 <div id="add-wrapper">
 
-    <a href="/dashboard">Dashboard</a>
+    <form method="POST" role="form" class="ui form">
+        <h2>Add a Workshop</h2>
 
-    <form method="POST" role="form">
-        <h1>Add a Workshop!</h1>
-
-        <div class="ui labeled input">
-            <div class="ui label">
-                Title
-            </div>
-            <input id="title-input" />
+        <div class="field">
+            <label>Title</label>
+            <input type="text" placeholder="Title" id="title-input" />
         </div>
 
-        <div class="ui labeled input">
-            <div class="ui label">
-                Author
-            </div>
-            <input id="author-input" />
+        <div class="field">
+            <label>Author</label>
+            <input type="text" placeholder="Author" id="author-input" />
         </div>
 
-        <div class="ui labeled input">
-            <div class="ui label">
-                Language
-            </div>
-            <input id="language-input" />
+        <div class="field">
+            <label>Language</label>
+            <input type="text" placeholder="Language" id="language-input" />
         </div>
 
-        <button class="ui button" id="submit" type="submit" name="button">Submit</button>
+        <h4>Add Markdown Files:</h4>
+        <div id="md-files">
+            <!-- {{#each numFiles}}
+                {{> addFile}}
+            {{/each}} -->
+        </div>
+
+        <div id="md-upload">
+            <button id="add-md" type="button" class="ui button icon">
+                <i class="icon plus"></i>
+            </button>
+        </div>
+
+        <button class="ui button blue" id="submit" type="submit" name="button">Submit</button>
     </form>
+</div>
+
+</template>
+
+<template name="addFile">
+
+<div class="add-file-wrapper">
+    <div class="field">
+        <label>Section Title</label>
+        <input type="text" placeholder="Section Title">
+        <input type="file">
+    </div>
 </div>
 
 </template>
